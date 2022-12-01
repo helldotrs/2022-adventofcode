@@ -6,20 +6,18 @@ with open("day01-input", "r") as data:
 list_alpha  = txt.split('\n')
 list_beta   = []
 
-print(list_alpha)
-
-print("for loop:")
 y = 0
 for x in list_alpha:
     if x:
-        x = int(x)
-        
+        x = int(x)        
         y += x
-        print(y) #comment out in final version
     else: 
         list_beta.append(y)
-        print (list_beta)
         y = 0
         
-print("answer:")
-print(max(list_beta))
+list_beta.sort()
+
+print("pt1:")
+print(list_beta[-1])
+print("pt2:")
+print(list_beta[-1]+list_beta[-2]+list_beta[-3])
