@@ -45,12 +45,14 @@ def first_function(x):
     first_char = item[0]
 
     if      first_char == "$":
-        if      first_char == "c"
-            if      item == "cd .."
+        if      first_char == "c":
+            if      item == "cd ..":
                 change_dir_up()
             else:
                 change_dir_to(item[3:])
-        elif    item == "ls"
+        elif    item == "ls":
+        else:
+            exit("error:002")
 
         
 
